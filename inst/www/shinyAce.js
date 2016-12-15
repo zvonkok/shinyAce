@@ -46,7 +46,7 @@ var staticCompleter = {
           
           Object.keys(comps).forEach(function(key) {
             words = words.concat(comps[key].map(function(d){
-              return {name: d, value: d, meta: key};
+              return {name: d, value: d, meta: key, score: 1000};
             }));
           });
           
